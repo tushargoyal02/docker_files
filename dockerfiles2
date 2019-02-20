@@ -1,0 +1,26 @@
+# [BUILD DOCKER IMAGE FROM FILE AS]
+
+	# docker build -t tushargoyal02/nameOfImage:tag .
+
+
+
+
+#base image
+FROM node:alpine
+
+
+#working directory(where all work will be done)
+
+WORKDIR /usr/app
+
+#copy src to destination in an images
+COPY ./ ./
+
+#dependency
+RUN npm install
+
+#default commands
+
+CMD ["npm","start"]
+
+
