@@ -1,0 +1,15 @@
+version: '3'
+
+# here we define almost a type of container
+services:
+  # redis server is the first service
+  redis-server: 
+    #take this image to create the service
+    image: 'redis'
+  # new service
+  node-app:
+    # build the service from a docker file in current location
+    build: .
+    # now for ports-->
+    ports:
+      - "8081:8081" #first is the base machine port and second is container port exposed

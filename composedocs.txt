@@ -1,0 +1,14 @@
+# to make all the instance of all container of all images
+cmd-> docker-compose up      # it is for yaml file
+
+# command to build images from docker file listed in docker compose
+
+
+cmd-> docker-compose up --build   # start container but try to rebuild all the images
+
+
+# to stop all docker compose containers
+cmd-> docker-compose down
+
+# to check status of container
+cmd-> docker-compose ps
