@@ -14,3 +14,11 @@
   kubectl get pods <pods is the type of object to get info>
 
   kubectl get services <for service object> 
+
+8 To get ip of minicube to access from our browser
+  minikube ip <dont use localhost only use this ip and port>
+
+9 Nodes - In kubernates node is a physical machine or we can say a virtual
+	  machine that is going to run number of objects that we create 
+10 Kube-api-sever - This program is present on master and is responsible for 
+		    monitoring the current status of all different nodes
