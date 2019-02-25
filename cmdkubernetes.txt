@@ -1,0 +1,16 @@
+1 To check minikube status
+	minikube status
+2 kubectl cluster-info 
+
+3 to deploy any containers in kubernates you need to run pod
+4 Kube Proxy - every single node contains kube proxy in it
+	- Like for example any request comes from outside then it inspect the 		  request and route it to different services or pods
+
+5 To link 2 pod it looks for selector and then look for key-value like		  [component:web]
+6 To run the config files in kubernates
+   cmd - kubectl apply -f <filename>
+
+7 To check the status of the configuration files created
+  kubectl get pods <pods is the type of object to get info>
+
+  kubectl get services <for service object> 
